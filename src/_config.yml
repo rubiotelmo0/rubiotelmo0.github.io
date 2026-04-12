@@ -1,0 +1,20 @@
+title: Telmo Rubio
+email: rubiotelmo0@gmail.com
+description: >-
+  Hi :) I'm Telmo Rubio, and this is my portfolio.
+  Here you'll find an up-to-date overview of my professional journey,
+  presented in a minimal and intuitive format. I hope you enjoy exploring it!
+baseurl: ""
+url: "https://rubiotelmo0.github.io"
+github_username: rubiotelmo0
+linkedin_username: telmo-r-8aa41b258
+
+theme: minima
+header_pages:
+  - index.markdown
+  - education.markdown
+  - work-experience.markdown
+  - academic-projects.markdown
+  - side-projects.markdown
+plugins:
+  - jekyll-feed
