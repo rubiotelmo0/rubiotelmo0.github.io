@@ -3,6 +3,8 @@
 This repository contains the personal portfolio of rubiotelmo0.
 - [.devcontainer](.devcontainer): The development docker environment based on `mcr.microsoft.com/devcontainers/jekyll:2.2.7`
 - [docs](docs): The jekyll static web page source
+- [docs/assets](docs/assets): Static assets used by the portfolio, including the favicon source SVG
+- [docs/favicon.ico](docs/favicon.ico): Root-level browser tab favicon served without theme overrides
 - [README.md]: Quick docs for end users
 
 The portfolio currently runs locally with `github-pages 232`, which resolves to Jekyll `3.10.0`.
@@ -22,6 +24,7 @@ Find additional reliable information on:
 - More on used Dockerfile: https://github.com/devcontainers/images/blob/main/src/jekyll/history/2.2.7.md
 - Jekyll 3.10.0: https://github.com/jekyll/jekyll/tree/v3.10.0/docs
 - Ruby 3.4.8: https://github.com/ruby/ruby/tree/v3_4_8/doc
+- Minima 2.5.1: https://github.com/jekyll/minima/tree/v2.5.1
 
 ## Commands
 Useful commands:

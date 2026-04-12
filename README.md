@@ -12,13 +12,14 @@ The source site lives in [`docs/`](./docs), and the recommended workflow is to u
 ## Repository Layout
 - [`.devcontainer/`](./.devcontainer): container definition for local development.
 - [`docs/`](./docs): Jekyll source files, pages, assets, and Ruby dependencies.
+- [`docs/favicon.ico`](./docs/favicon.ico): browser tab icon served from the site root without theme overrides.
 - [`docs/index.markdown`](./docs/index.markdown): home page content.
 - [`docs/education.markdown`](./docs/education.markdown): education page content.
 - [`docs/work-experience.markdown`](./docs/work-experience.markdown): work experience page content.
 - [`docs/academic-projects.markdown`](./docs/academic-projects.markdown): academic projects page content.
 - [`docs/side-projects.markdown`](./docs/side-projects.markdown): side projects page content.
 - [`docs/_config.yml`](./docs/_config.yml): site metadata and Jekyll configuration.
-- [`docs/assets/`](./docs/assets): static image assets used by the portfolio.
+- [`docs/assets/`](./docs/assets): static image assets used by the portfolio, including the favicon source SVG.
 - `docs/_site/`: generated output from local builds. Do not edit it manually.
 - [`AGENTS.md`](./AGENTS.md): repository-specific instructions for coding agents.
 
@@ -29,6 +30,7 @@ The source site lives in [`docs/`](./docs), and the recommended workflow is to u
 - Local site bundle currently resolves to `github-pages 232`, `jekyll 3.10.0`, and `minima 2.5.1`.
 - Site source directory: `docs/`.
 - Build output directory: `docs/_site/`.
+- Browser tab icon: `docs/favicon.ico`, with matching source artwork in `docs/assets/favicon.svg`.
 - Publication status: local development is ready, and the repository now matches the GitHub Pages `/docs` publishing layout.
 
 ## Getting Started
