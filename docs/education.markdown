@@ -16,6 +16,19 @@ In this master's degree, three cutting-edge areas are integrated: data analysis,
 - Cloud: design, provisioning, and operation of high-availability environments
 - Agile software design, development, and deployment (DevOps/DevSecOps, CI/CD)
 
+**Erasmus Exchange Semester**
+
+*Algebra University, Zagreb \| October 2024 - March 2025*
+
+Completed a one-semester Erasmus exchange focused on core areas of software development and information systems. Coursework included:
+
+- Software Engineering
+- Accessing Data from Program Code
+- Management of Information Systems
+- Organization and Management
+- Application Development for Mobile Devices
+- Decision-Making Support Systems
+
 **Computer Engineering Degree**
 
 *Mondragon University \| 2021 - 2025*
@@ -34,16 +47,3 @@ Focused on both hardware and software, this program covers system design, softwa
 - Distributed systems
 - Artificial intelligence
 - Networks
-
-**Erasmus Exchange Semester**
-
-*Algebra University, Zagreb \| October 2024 - March 2025*
-
-Completed a one-semester Erasmus exchange focused on core areas of software development and information systems. Coursework included:
-
-- Software Engineering
-- Accessing Data from Program Code
-- Management of Information Systems
-- Organization and Management
-- Application Development for Mobile Devices
-- Decision-Making Support Systems
