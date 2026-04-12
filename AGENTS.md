@@ -2,7 +2,7 @@
 
 This repository contains the personal portfolio of rubiotelmo0.
 - [.devcontainer](.devcontainer): The development docker environment based on `mcr.microsoft.com/devcontainers/jekyll:2.2.7`
-- [src](src): The jekyll static web page source
+- [docs](docs): The jekyll static web page source
 - [README.md]: Quick docs for end users
 
 The portfolio currently runs locally with `github-pages 232`, which resolves to Jekyll `3.10.0`.

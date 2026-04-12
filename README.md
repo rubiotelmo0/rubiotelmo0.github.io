@@ -7,19 +7,19 @@
 [![Devcontainer Ready](https://img.shields.io/badge/Devcontainer-ready-007ACC?logo=visualstudiocode&logoColor=white)](./.devcontainer)
 
 Personal portfolio site of Telmo Rubio Etxabe, built with Jekyll and the `minima` theme.
-The source site lives in [`src/`](./src), and the recommended workflow is to use the provided VS Code devcontainer.
+The source site lives in [`docs/`](./docs), and the recommended workflow is to use the provided VS Code devcontainer.
 
 ## Repository Layout
 - [`.devcontainer/`](./.devcontainer): container definition for local development.
-- [`src/`](./src): Jekyll source files, pages, assets, and Ruby dependencies.
-- [`src/index.markdown`](./src/index.markdown): home page content.
-- [`src/education.markdown`](./src/education.markdown): education page content.
-- [`src/work-experience.markdown`](./src/work-experience.markdown): work experience page content.
-- [`src/academic-projects.markdown`](./src/academic-projects.markdown): academic projects page content.
-- [`src/side-projects.markdown`](./src/side-projects.markdown): side projects page content.
-- [`src/_config.yml`](./src/_config.yml): site metadata and Jekyll configuration.
-- [`src/assets/`](./src/assets): static image assets used by the portfolio.
-- `src/_site/`: generated output from local builds. Do not edit it manually.
+- [`docs/`](./docs): Jekyll source files, pages, assets, and Ruby dependencies.
+- [`docs/index.markdown`](./docs/index.markdown): home page content.
+- [`docs/education.markdown`](./docs/education.markdown): education page content.
+- [`docs/work-experience.markdown`](./docs/work-experience.markdown): work experience page content.
+- [`docs/academic-projects.markdown`](./docs/academic-projects.markdown): academic projects page content.
+- [`docs/side-projects.markdown`](./docs/side-projects.markdown): side projects page content.
+- [`docs/_config.yml`](./docs/_config.yml): site metadata and Jekyll configuration.
+- [`docs/assets/`](./docs/assets): static image assets used by the portfolio.
+- `docs/_site/`: generated output from local builds. Do not edit it manually.
 - [`AGENTS.md`](./AGENTS.md): repository-specific instructions for coding agents.
 
 ## Current Setup
@@ -27,9 +27,9 @@ The source site lives in [`src/`](./src), and the recommended workflow is to use
 - Devcontainer base image: `mcr.microsoft.com/devcontainers/jekyll:2.2.7`.
 - Ruby version in the container: `3.4.8`.
 - Local site bundle currently resolves to `github-pages 232`, `jekyll 3.10.0`, and `minima 2.5.1`.
-- Site source directory: `src/`.
-- Build output directory: `src/_site/`.
-- Publication status: local development is ready, but GitHub Pages publication is still pending.
+- Site source directory: `docs/`.
+- Build output directory: `docs/_site/`.
+- Publication status: local development is ready, and the repository now matches the GitHub Pages `/docs` publishing layout.
 
 ## Getting Started
 These steps set up the portfolio for local development inside the containerized environment.
@@ -46,10 +46,10 @@ These steps set up the portfolio for local development inside the containerized 
 2. Set `RUBIOTELMO0_PAGES_DEV_GIT_NAME` and `RUBIOTELMO0_PAGES_DEV_GIT_EMAIL` in the shell you will use to launch VS Code.
 3. From that same shell, move to the repository root and run `code .`.
 4. In VS Code, run `Dev Containers: Reopen in Container`.
-5. Once the container starts, move to `src/` and run `bundle install` if dependencies need to be installed or refreshed.
+5. Once the container starts, move to `docs/` and run `bundle install` if dependencies need to be installed or refreshed.
 
 ### Usage
-Run the portfolio locally from `src/`:
+Run the portfolio locally from `docs/`:
 
 ```bash
 bundle exec jekyll serve --livereload --host 0.0.0.0
@@ -141,8 +141,8 @@ Once the Git configuration steps are completed:
 
 
 ## Publication Notes
-- The portfolio source is stored under `src/`, not at the repository root.
-- GitHub Pages default Jekyll publishing does not use `src/` directly, so extra publication setup is still needed before the site can be published from this repository as-is.
+- The portfolio source is stored under `docs/`, not at the repository root.
+- GitHub Pages can publish directly from the default branch `docs/` folder when that source option is enabled in repository settings.
 - The current local dependency set is aligned with the GitHub Pages gem through `github-pages 232`.
 
 
