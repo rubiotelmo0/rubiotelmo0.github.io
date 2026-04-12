@@ -1,0 +1,28 @@
+{
+  "name": "Jekyll",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+      "packages": "git,build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
+    },
+    "ghcr.io/devcontainers-extra/features/prettier:1.0.2": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["sissel.shopify-liquid", "yzhang.markdown-all-in-one", "openai.chatgpt"]
+    }
+  },
+
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "GIT_AUTHOR_NAME": "${localEnv:RUBIOTELMO0_PAGES_DEV_GIT_NAME}",
+    "GIT_AUTHOR_EMAIL": "${localEnv:RUBIOTELMO0_PAGES_DEV_GIT_EMAIL}",
+    "GIT_COMMITTER_NAME": "${localEnv:RUBIOTELMO0_PAGES_DEV_GIT_NAME}",
+    "GIT_COMMITTER_EMAIL": "${localEnv:RUBIOTELMO0_PAGES_DEV_GIT_EMAIL}"
+  },
+  "runArgs": ["--name", "rubiotelmo0-pages-dev"],
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}

@@ -18,7 +18,7 @@ This page highlights personal and independent projects published on my GitHub pr
 [![personalknowledgemanagement](https://img.shields.io/badge/personal%20knowledge%20management-475569)](https://github.com/topics/personalknowledgemanagement)
 
 <p align="center">
-  <img src="./assets/pkm_obsidian_photo.png" width="450" alt="PKM with Obsidian Illustration">
+  <img src="./assets/pkm_obsidian_photo.png" width="500" alt="PKM with Obsidian Illustration">
 </p>
 
 A reusable Obsidian vault template built around my personal workflow and philosophy for Personal Knowledge Management (PKM). The repository includes a structured vault layout with notes, templates, diagrams, attachments, and metadata conventions intended to support long-term learning rather than short-lived note storage. It reflects my interest in connected knowledge systems such as atomic notes, maps of content, and evergreen note refinement, where ideas are progressively clarified and linked instead of remaining isolated files.

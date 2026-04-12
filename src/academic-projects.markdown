@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Academic projects
+title: Academic works
 nav_title: Academic
 ---
 
