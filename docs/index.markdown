@@ -10,4 +10,6 @@ I’m a Computer Engineer with a Bachelor’s degree from Mondragon University, 
 
 I’m currently pursuing a Master’s degree in Cybersecurity, Data Science & Cloud Computing while working at Cybertix, where I leverage AI to optimize workflows and boost productivity for Cybersecurity Engineers. I remain committed to continuous learning, sharing insights, and contributing thoughtfully to the responsible advancement of AI, Cybersecurity, and Computer Science.
 
+If you came here from LinkedIn, the [Academic](./academic-projects.html) and [Projects](./side-projects.html) pages include portfolio-only details.
+
 ![Paper airplane illustration](./assets/home_photo.png)

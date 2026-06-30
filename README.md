@@ -152,7 +152,7 @@ Once the Git configuration steps are completed:
 
 
 ## Authors
-Telmo Rubio - [LinkedIn](https://www.linkedin.com/in/telmo-rubio-8aa41b258/)
+Telmo Rubio - [LinkedIn](https://www.linkedin.com/in/rubiotelmo0)
 
 ## References
 - (Accessed April 12, 2026) Devcontainer Jekyll image history: https://github.com/devcontainers/images/blob/main/src/jekyll/history/2.2.7.md

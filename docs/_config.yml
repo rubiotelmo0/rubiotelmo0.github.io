@@ -1,5 +1,5 @@
 title: Telmo Rubio
-email: rubiotelmo0@gmail.com
+email: rubiotelmo0@proton.me
 description: >-
   Hi :) I'm Telmo Rubio, and this is my portfolio.
   Here you'll find an up-to-date overview of my professional journey,
@@ -7,7 +7,7 @@ description: >-
 baseurl: ""
 url: "https://rubiotelmo0.github.io"
 github_username: rubiotelmo0
-linkedin_username: telmo-rubio-8aa41b258
+linkedin_username: rubiotelmo0
 
 theme: minima
 header_pages:

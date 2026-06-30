@@ -12,9 +12,9 @@ nav_title: Work
 
 **Research Assistant, Data Analysis & Cybersecurity Research Team**
 
-*Mondragon University \| September 2022 - July 2024*
-
 *Mondragon University \| March 2025 - July 2025*
+
+*Mondragon University \| September 2022 - July 2024*
 
 - Creation of Machine Learning models for industrial processes
 - Analysis and processing of real industrial data

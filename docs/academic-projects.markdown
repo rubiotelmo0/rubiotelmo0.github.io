@@ -9,6 +9,8 @@ nav_title: Academic
 
 *[GitHub Organization](https://github.com/IndustrialAnomalySynthesis)*
 
+Organization access is available on request via [email](mailto:{{ site.email }}).
+
 ![Conceptual Simple Sythesis Diagram](./assets/FDP_photo.png)
 
 In modern manufacturing production lines (Industry 4.0), predictive Artificial Intelligence (AI) models are used to accurately detect, locate pixel-wise, and classify industrial anomalies in images. These tasks ensure product quality, reduce operational downtime, and maintain safety standards on automated production lines. However, the scarcity of anomalous samples needed to train AI models to perform these tasks represents a persistent challenge in real-life industrial settings.
