@@ -134,6 +134,9 @@ cd /path/to/repo
 code .
 ```
 
+### Persisted codex data
+Codex data under `~/.codex` is persisted in a Docker volume mounted at `/home/vscode/.codex`. The volume name is `${localWorkspaceFolderBasename}-codex`, so for a repo folder named `my-repo` it becomes `my-repo-codex`.
+
 #### Starting devcontainer
 Once the Git configuration steps are completed:
 

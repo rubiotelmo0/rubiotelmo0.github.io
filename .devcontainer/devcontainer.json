@@ -9,13 +9,14 @@
     },
     "ghcr.io/devcontainers-extra/features/prettier:1.0.2": {}
   },
-
+	"mounts": [
+		"source=${localWorkspaceFolderBasename}-codex,target=/home/vscode/.codex,type=volume"
+	],
   "customizations": {
     "vscode": {
       "extensions": ["sissel.shopify-liquid", "yzhang.markdown-all-in-one", "openai.chatgpt"]
     }
   },
-
   "remoteUser": "vscode",
   "containerEnv": {
     "GIT_AUTHOR_NAME": "${localEnv:RUBIOTELMO0_PAGES_DEV_GIT_NAME}",
@@ -24,5 +25,5 @@
     "GIT_COMMITTER_EMAIL": "${localEnv:RUBIOTELMO0_PAGES_DEV_GIT_EMAIL}"
   },
   "runArgs": ["--name", "rubiotelmo0-pages-dev"],
-  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+  "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.codex && git config --global --add safe.directory ${containerWorkspaceFolder}"
 }
