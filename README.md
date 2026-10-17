@@ -31,6 +31,10 @@ The source site lives in [`docs/`](./docs), and the recommended workflow is to u
 - Site source directory: `docs/`.
 - Build output directory: `docs/_site/`.
 - Browser tab icon: `docs/favicon.ico`, with matching source artwork in `docs/assets/favicon.svg`.
+- The Projects page includes Devcontainer Template, Personal Knowledge Management with Obsidian, and Keyboard Poisoning. Project artwork is stored in `docs/assets/`, with color-matched, hover-only glows (purple for Obsidian) defined in `docs/assets/main.scss` on top of Minima. Glow transitions respect reduced-motion preferences.
+- Project images sit above the hover glow without color blending.
+- Project entries are separated by thin, light grey horizontal rules.
+- The Obsidian and Keyboard Poisoning illustrations use transparent PNG backgrounds.
 - Publication status: local development is ready, and the repository now matches the GitHub Pages `/docs` publishing layout.
 
 ## Getting Started

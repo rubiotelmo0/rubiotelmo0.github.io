@@ -1,0 +1,52 @@
+---
+---
+
+@import "minima";
+
+.project-separator {
+  margin: $spacing-unit 0;
+  border: 0;
+  border-top: 1px solid $grey-color-light;
+}
+
+.project-illustration {
+  --glow-color: rgba(14, 165, 233, 0.2);
+  position: relative;
+  isolation: isolate;
+}
+
+.project-illustration::before {
+  content: "";
+  position: absolute;
+  inset: -12px 0;
+  z-index: 0;
+  background: radial-gradient(ellipse, var(--glow-color), transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) {
+  .project-illustration:hover::before {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-illustration::before {
+    transition: none;
+  }
+}
+
+.project-illustration img {
+  position: relative;
+  z-index: 1;
+}
+
+.project-illustration--obsidian {
+  --glow-color: rgba(124, 58, 237, 0.24);
+}
+
+.project-illustration--keyboard {
+  --glow-color: rgba(101, 163, 13, 0.2);
+}

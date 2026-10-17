@@ -16,8 +16,12 @@ Keep in mind that:
 - The generated code must be minimal, avoid excesive helper functions and similar approaches
 
 ## Style
+- Separate project entries with `project-separator` horizontal rules, styled using Minima's spacing and light grey border color.
 - rubiotelmo0's portfolio must maintain a minimal and clean style
 - The used jekyll base-theme is `minima`
+- `docs/assets/main.scss` imports Minima and adds hover-only project illustration glows, with reduced-motion support. Apply `project-illustration` to the paragraph wrapping project artwork; color modifiers match individual illustrations (purple for Obsidian).
+- Keep project images above their glow layer without blend modes so artwork retains its original colors.
+- Preserve alpha transparency in the Obsidian and Keyboard Poisoning PNG illustrations so their backgrounds do not obscure the hover glows.
 
 ## Docs
 Find additional reliable information on:
