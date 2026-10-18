@@ -4,6 +4,8 @@ title: Inicio
 nav_title: Inicio
 ---
 
+<img class="intro-portrait" src="{{ '/assets/portrait.png' | relative_url }}" alt="Retrato de Telmo Rubio Etxabe" width="180" height="180">
+
 ## ¡Hola!
 
 Soy ingeniero informático con una licenciatura de la Universidad de Mondragón, donde pasé dos años y medio apoyando la investigación en inteligencia artificial en el grupo de ciencia de datos y ciberseguridad. Mi trabajo se centró en aplicar el aprendizaje automático y el análisis de datos para resolver retos industriales del mundo real, colaborando con socios académicos e industriales para desarrollar y evaluar soluciones prácticas de inteligencia artificial.

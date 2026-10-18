@@ -102,6 +102,25 @@ pre, code, .highlight {
   }
 }
 
+.intro-portrait {
+  float: right;
+  width: 180px;
+  height: 180px;
+  margin: 0 0 ($spacing-unit / 2) $spacing-unit;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 35%;
+
+  @include media-query($on-palm) {
+    float: none;
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto $spacing-unit;
+  }
+}
+
 .project-separator {
   margin: $spacing-unit 0;
   border: 0;

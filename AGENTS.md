@@ -18,6 +18,7 @@ Keep in mind that:
 ## Style
 - Separate project entries with `project-separator` horizontal rules, styled using Minima's spacing and the theme's muted grey border color.
 - rubiotelmo0's portfolio must maintain a minimal and clean style
+- Both intro pages share `docs/assets/portrait.png`, displayed with `.intro-portrait` as a circular CSS crop beside the opening text on desktop and centered above it on mobile. Keep localized alt text and the photograph's original colors in both themes.
 - The used jekyll base-theme is `minima`, with light (default) and dark palettes in `docs/assets/main.scss`. The header theme button stores the selection in localStorage; `docs/assets/theme.js` loads before CSS through the head override to avoid a theme flash. Keep its accessible labels localized and its keyboard focus visible. Remove Minima’s top header border in both themes. Keep text, links, navigation, and focus states readable in both themes in both languages.
 - `docs/assets/main.scss` imports Minima and adds hover-only side-project illustration glows, with reduced-motion support. Apply `project-illustration` only to the paragraph wrapping side-project artwork; color modifiers match individual illustrations (purple for Obsidian). The academic diagram has no hover glow.
 - Keep project images above their glow layer without blend modes so artwork retains its original colors.
