@@ -14,4 +14,5 @@ I’m currently pursuing a Master’s degree in Cybersecurity, Data Science & Cl
 - [Projects](./side-projects.html)
 - [Academic](./academic-projects.html)
 
-![Paper airplane illustration](./assets/home_photo.png)
+![Paper airplane illustration]({{ '/assets/home_photo.png' | relative_url }})
+{: .home-illustration }

@@ -6,7 +6,7 @@
 [![GitHub Pages 232](https://img.shields.io/badge/GitHub%20Pages-232-222222?logo=githubpages&logoColor=white)](https://pages.github.com/versions/)
 [![Devcontainer Ready](https://img.shields.io/badge/Devcontainer-ready-007ACC?logo=visualstudiocode&logoColor=white)](./.devcontainer)
 
-Personal portfolio site of Telmo Rubio Etxabe, built with Jekyll and the `minima` theme.
+Personal portfolio site of Telmo Rubio Etxabe, built with Jekyll and the `minima` theme with dark and light palettes.
 The source site lives in [`docs/`](./docs), and the recommended workflow is to use the provided VS Code devcontainer.
 
 ## Repository Layout
@@ -23,6 +23,12 @@ The source site lives in [`docs/`](./docs), and the recommended workflow is to u
 - `docs/_site/`: generated output from local builds. Do not edit it manually.
 - [`AGENTS.md`](./AGENTS.md): repository-specific instructions for coding agents.
 
+## Languages
+
+English pages retain their existing URLs. Spanish (Spain) translations are available at `/es/`, with a minimal outlined language button in the header to switch to the equivalent page. The button shows the destination language (ES or EN) beside a country-neutral globe icon, includes a descriptive screen-reader label, and has a visible keyboard focus state and is available in the mobile navigation menu. Navigation and footer descriptions follow the page language. The root 404 page includes a Spanish recovery link because GitHub Pages serves `/404.html` for missing URLs in either language.
+
+Keep the five content pages in `docs/` and `docs/es/` in sync, using the same filenames so the language switch can pair them. Spanish pages inherit `lang: es-ES` and their description from `_config.yml`; retained specialist English terms use Markdown italics. Project names keep their original wording in both languages without italics, except the Spanish Obsidian title: «Gestión del conocimiento personal con Obsidian». Use `relative_url` for shared assets so they load under `/es/` and when a `baseurl` is configured. The header and footer overrides in `docs/_includes/` preserve Minima's layout while supporting both languages.
+
 ## Current Setup
 - Development environment: VS Code devcontainer.
 - Devcontainer base image: `mcr.microsoft.com/devcontainers/jekyll:2.2.7`.
@@ -33,8 +39,10 @@ The source site lives in [`docs/`](./docs), and the recommended workflow is to u
 - Browser tab icon: `docs/favicon.ico`, with matching source artwork in `docs/assets/favicon.svg`.
 - The Projects page includes Devcontainer Template, Personal Knowledge Management with Obsidian, and Keyboard Poisoning. Project artwork is stored in `docs/assets/`, with color-matched, hover-only glows (purple for Obsidian) defined in `docs/assets/main.scss` on top of Minima. Glow transitions respect reduced-motion preferences.
 - Project images sit above the hover glow without color blending.
-- Project entries are separated by thin, light grey horizontal rules.
-- The Obsidian and Keyboard Poisoning illustrations use transparent PNG backgrounds.
+- Project entries are separated by thin, muted grey horizontal rules.
+- All five portfolio illustrations use transparent PNG canvases. The paper airplane uses pale linework and the academic diagram uses light cyan labels for contrast; its original photograph panels retain their dark backgrounds. The project illustrations retain their original colors.
+- The header sun/moon button switches between dark (default) and light themes and remembers the choice across pages and visits. Both languages use the palettes in `docs/assets/main.scss`, including the mobile menu, footer, links, and keyboard focus states. `docs/assets/theme.js` restores the saved choice before CSS loads via `docs/_includes/head.html`; switching still works when browser storage is unavailable. Minima’s top header border is removed.
+- The airplane uses white linework in dark mode and black in light mode. The academic diagram switches between transparent `FDP_photo.png` and `FDP_photo_light.png` assets for readable labels in each theme, without a hover glow.
 - Publication status: local development is ready, and the repository now matches the GitHub Pages `/docs` publishing layout.
 
 ## Getting Started
@@ -69,6 +77,18 @@ For one-off validation commands:
 bundle exec jekyll build
 bundle exec jekyll doctor
 ```
+
+### Google Analytics
+
+Google Analytics 4 uses the public measurement ID `G-XMXTXJF4HT`, configured as `google_analytics` in `docs/_config.yml`. The shared head includes `docs/_includes/google-analytics.html` only in production, covering both English and Spanish pages. The include replaces Minima's legacy Analytics script.
+
+To validate production output locally, run from `docs/`:
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+Ordinary development builds omit the tag. To verify live collection after deployment, visit the site and check Google Analytics' Realtime report.
 
 ### [`.devcontainer`](./.devcontainer)
 This repo ships with a VS Code devcontainer environment to make development simpler.

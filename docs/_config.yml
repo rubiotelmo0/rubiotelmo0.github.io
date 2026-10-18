@@ -10,6 +10,7 @@ github_username: rubiotelmo0
 linkedin_username: rubiotelmo0
 
 theme: minima
+google_analytics: G-XMXTXJF4HT
 header_pages:
   - index.markdown
   - education.markdown
@@ -18,3 +19,19 @@ header_pages:
   - side-projects.markdown
 plugins:
   - jekyll-feed
+
+# English remains the default; Spanish pages live under /es/.
+lang: en
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "es"
+    values:
+      lang: es-ES
+      description: >-
+        Hola :) Soy Telmo Rubio y este es mi portfolio.
+        Aquí encontrarás un resumen actualizado de mi trayectoria profesional,
+        presentado de forma sencilla e intuitiva. ¡Espero que disfrutes explorándolo!
