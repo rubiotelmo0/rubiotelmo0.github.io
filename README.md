@@ -41,7 +41,7 @@ Keep the five content pages in `docs/` and `docs/es/` in sync, using the same fi
 - Project images sit above the hover glow without color blending.
 - Project entries are separated by thin, muted grey horizontal rules.
 - All five portfolio illustrations use transparent PNG canvases. The paper airplane uses pale linework and the academic diagram uses light cyan labels for contrast; its original photograph panels retain their dark backgrounds. The project illustrations retain their original colors.
-- The header sun/moon button switches between dark (default) and light themes and remembers the choice across pages and visits. Both languages use the palettes in `docs/assets/main.scss`, including the mobile menu, footer, links, and keyboard focus states. `docs/assets/theme.js` restores the saved choice before CSS loads via `docs/_includes/head.html`; switching still works when browser storage is unavailable. Minima’s top header border is removed.
+- The header sun/moon button switches between light (default) and dark themes and remembers the choice across pages and visits. Both languages use the palettes in `docs/assets/main.scss`, including the mobile menu, footer, links, and keyboard focus states. `docs/assets/theme.js` restores the saved choice before CSS loads via `docs/_includes/head.html`; switching still works when browser storage is unavailable. Minima’s top header border is removed.
 - The airplane uses white linework in dark mode and black in light mode. The academic diagram switches between transparent `FDP_photo.png` and `FDP_photo_light.png` assets for readable labels in each theme, without a hover glow.
 - Publication status: local development is ready, and the repository now matches the GitHub Pages `/docs` publishing layout.
 
